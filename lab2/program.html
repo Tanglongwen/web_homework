@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=”viewport” content=”width=device-width, initial-scale=1″/>
+    <title>我的笔记</title>
+    <link type="text/css" rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="header">
+    <h1>My Note</h1>
+    <p>------designed by Tang Longwen</p>
+    <a href="http://www.lofter.com/">Contact</a>
+    <a href="http://www.w3school.com.cn/">Links</a>
+    <a href="https://www.yinxiang.com/">About</a>
+    <a href="http://www.youniyin.com/">Photos</a>
+    <a href="http://www.cnblogs.com/">Blog</a>
+    <a href="http://www.jianshu.com/p/556e187f87bd">Home</a>
+</div>
+<div class="content">
+    <h2 id="lecture_notes">Lecture Notes</h2>
+    <dl>
+        <dt>HTML&lt;a&gt;标签:</dt>
+        <dd>
+            <blockquote>&lt;a&gt;标签定义超链接，用于从一张页面链接到另一张页面。 &lt;a&gt;元素最重要的属性是 href 属性，它指示链接的目标。 在所有浏览器中，链接的默认外观是：
+                未被访问的链接带有下划线而且是蓝色的 已被访问的链接带有下划线而且是紫色的 活动链接带有下划线而且是红色的。
+            </blockquote>
+            <b> 实例：</b>
+            <pre>
+   &lt;html&gt;
+   &lt;head&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+   &lt;a href="http://www.w3school.com.cn"&gt;W3School&lt;/a&gt;
+   &lt;/body&gt;
+   &lt;/html&gt;
+</pre>
+            <b>查看结果：</b><br>
+            　　<a href="http://www.w3school.com.cn"> W3School</a>----注：点击该链接便会跳转到W3school网站
+        </dd>
+        <hr>
+        <dt>
+            HTML &lt;img&gt;标签:
+        </dt>
+        <dd>
+            <blockquote>img 元素向网页中嵌入一幅图像。
+                请注意，从技术上讲，&lt;img&gt; 标签并不会在网页中插入图像，而是从网
+                页上链接图像。&lt;img&gt; 标签创建的是被引用图像的占位空间。
+                &lt;img&gt; 标签有两个必需的属性：<q>src 属性 </q><q> alt 属性</q>。<br>
+                (1)<br>&lt;img&gt;标签的 src 属性是必需的。它的值是图像文件的 URL，也就是引用该图像的文件的的绝对路径或相对路径。
+            </blockquote>
+            <b>实例：</b>
+            <pre>
+    &lt;html&gt;
+    &lt;body&gt;
+    &lt;p&gt;
+    郁金香：
+    &lt;img src="/i/eg_tulip.jpg" /&gt;
+    &lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</pre>
+            <b>查看结果：</b><br>
+            <img src="images/flower.jpg" alt="郁金香">
+            <blockquote>
+                (2)<br>alt 属性是一个必需的属性，它规定在图像无法显示时的替代文本。
+                假设由于下列原因用户无法查看图像，alt 属性可以为图像提供替代的信息：
+                网速太慢
+                src 属性中的错误
+                浏览器禁用图像
+                用户使用的是屏幕阅读器
+                &lt;img&gt;标签的 alt 属性指定了替代文本，用于在图像无法显示或者用户禁用图像显示时，代替图像显示在浏览器中的内容。
+            </blockquote>
+            <b>实例：</b>
+            <pre>
+     &lt;html&gt;
+     &lt;body&gt;
+     &lt;img src="/i/eg_tulip.jpg"  alt="郁金香" /&gt;
+     &lt;/body&gt;
+     &lt;/html&gt;
+</pre>
+            <b>查看结果：</b><br>
+            　　<img src="xxx.jpg" alt="郁金香">
+        </dd>
+        <hr>
+        <dt>CSS 背景:</dt>
+        <dd>
+            <blockquote>可以使用 background-color 属性为元素设置背景色。这个属性接受任何合法的颜色值。
+                这条规则把元素的背景设置为灰色：
+                p {background-color: gray;}
+                如果您希望背景色从元素中的文本向外少有延伸，只需增加一些内边距：
+                p {background-color: gray; padding: 20px;}
+            </blockquote>
+            <b> 实例：</b>
+            <pre>
+       &lt;html&gt;
+       &lt;head&gt;
+       &lt;style type="text/css"&gt;
+       body {background-color: yellow}
+       h4 {background-color: #00ff00}
+       &lt;/style&gt;
+       &lt;/head&gt;
+       &lt;body&gt;
+       &lt;h4&gt;这是标题h4，设置为黄色背景&lt;/h4&gt;
+       &lt;/body&gt;
+       &lt;/html&gt;
+</pre>
+            <b>查看结果：</b>
+            　　<h4>这是标题h4，设置为黄色背景</h4>
+        </dd>
+        <hr>
+        <dt>CSS 字体:</dt>
+        <dd>
+            <blockquote>在 CSS 中，有两种不同类型的字体系列名称：
+                通用字体系列 - 拥有相似外观的字体系统组合（比如 "Serif" 或 "Monospace"）
+                特定字体系列 - 具体的字体系列（比如 "Times" 或 "Courier"）
+                除了各种特定的字体系列外，CSS 定义了 5 种通用字体系列：
+                Serif 字体
+                Sans-serif 字体
+                Monospace 字体
+                Cursive 字体
+                Fantasy 字体
+            </blockquote>
+            <b> 实例：</b>
+            <pre>
+       &lt;html&gt;
+       &lt;head&gt;
+       &lt;style type="text/css"&gt;
+       h5 {font-family:cursive;}
+       h6 {font-family:fantasy;}
+       &lt;/style&gt;
+       &lt;/head&gt;
+       &lt;body&gt;
+       &lt;h5&gt;这是应用了cursive样式的字体&lt;/h5&gt;
+       &lt;h6&gt;这是应用了fantasy样式的字体&lt;/h6&gt;
+       &lt;/body&gt;
+       &lt;/html&gt;
+</pre>
+            <b>查看结果：</b>
+            　　<h5>　　这是应用了cursive样式的字体</h5>
+            <h6>　　这是应用了fantasy样式的字体</h6>
+        </dd>
+    </dl>
+    <h2 id="labs">Labs</h2>
+    <dl>
+        <dt>
+            一、为你自己写一个网页：
+        </dt>
+        <dd>
+            自我介绍、最近图片、这学期选择的课程和一些最喜欢的电影
+            你的自我介绍必须超过一个段落
+            你的课程必须放在一个有序列表里面
+            你的最喜欢的电影必须放在一个无序列表里面
+            设置一个链接指向SE-805课程的网站
+            为了易读，请使用不同的字体
+    </dd>
+        <br>
+        <dt>
+            二、写一个网页，在其中列出我们在这个课程中学过的主要内容，每个内容列出具体细节：
+        </dt>
+        <dd>
+            所有html标签和css属性,并且解释它们的用途和用法等
+            dl, dt, dd 用于定义
+            blockquote, q 用于引用 w3 school 的语句
+            code, pre 用于例子
+            把样式写在一个单独的css文件中等等主要内容
+        </dd>
+        <br>
+        <dt>
+            三、练习JavaScript基础:
+        </dt>
+        <dd>
+            用JavaScript编写一个快速排序算法，要求在页面上输出原始输入应对列及排序后的结果。
+            再编写一个网页, 展示你最喜欢电影(最少3个)
+            使这些电影名字的颜色每隔10秒逐个从黑色变成红色
+            在网页上添加一个按钮.当点击该按钮时，它将电影列表上的电影名称进行反序处理，然后在消息对话框中弹出。要求分别使用 DOM 函数和 Prototype.js 函数完成。
+        </dd>
+        <br>
+        <dt>
+            四、在Firebug控制台中用JavaScript编写代码定义Employee,Manager,和Secretary的类：
+        </dt>
+        <dd>
+            每个Employee拥有名字和薪水
+            每个 Manager 都是 Employee, 并且管理一组其他的Employees
+            每个 Secretary  都是Employee, 并为Manager 工作
+            给这些类添加方法
+            每个Employee 有一个show()方法，以字符串的形式返回自己 的名字和薪水
+            每个 Manager 有一个 getInferiors()方法，返回他的下属
+            每个Secretary 有一个getSuperior()方法， 返回他的老板
+            尝试使用两种不同的继承方式, 复制和原型
+        </dd>
+        <br>
+        <dt>
+            五、在单个页面上编写一个简单的待办事项列表应用:
+        </dt>
+        <dd>
+            使用 <div id=“to-do”></div> 元素包含这个应用所有的HTML元素
+            一个表单。表单使用一个textarea指定一个新待办事项, 和一个”add” 按钮添加这个事项到列表中
+            当前待办事项的列表
+            每个事项有一个checkbox以供选择
+            按钮 “select all”, “deselect all”, “remove” (把所有选中的待办事项从列表中移除)
+            当点击 “add” 按钮, 新的待办事项会被加入列表的最后
+            使用所学的非侵入式JavaScript技术
+            使用 prototype.js 中的 DOM 事件句柄函数
+            所有的事件句柄注册到“to-do” div 元素上
+            使用 event.element() 找出事件的源头
+        </dd>
+        <br>
+        <dt>
+            六、在一个网页中写一个简单的待办事项列表的应用:
+        </dt>
+        <dd>
+            一个 &lt;div id=“to-do”&gt;&lt;/div&gt; 元素包含该待办事项列表的所有html元素
+            一个表单，带有文本区域(对要添加的待办事项进行说明)和一个“添加”按钮（用来将该新的待办事项加入到列表中 ）
+            一个当前待办事项的列表
+            每个事项有一个复选框
+            按钮“选择全部”, “删除全部”, “删除” (用来删除列表中选中的项目)
+            当点击“添加”按钮 时，新的待办事项将被插入到列表的底部
+            使用学过的非侵入的JavaScript技巧
+            为该待办事项列表添加热键
+            “↑” 和“↓”键用来在该列表中上下移动
+            “Enter” 键用于 选中/取消选中 当前待办事项列表
+            通过两种方式使用web会话保存所有待办事项
+            使用简单的cookie, 把所有的待办事项保存在一个cookie里面(需要注意的是,应该对这些数据进行编码)
+            使用PHP的会话机制
+        </dd>
+        <br>
+    </dl>
+    <h2 id="homeworks">HomeWorks</h2>
+    <dl>
+        <dt>
+            大作业--我的家乡
+        </dt>
+            <dd>
+    详细介绍自己的家乡，要求包括以下部分板块：风土人情、家乡风貌、家乡土特产品、家乡经济、家乡教育、文化传承、历史名人大事、历史名胜古迹、家乡社区与论坛：要求使用HTML所有标签、CSS主要属性、应用JAVASCRIPT实现动态与交互、使用 prototype.js 中的 DOM 事件句柄函数、使用简单的cookie实现待办事项功能、使用PHP的会话机制、使用Google Maps JavaScript API V3完成社区模块。
+    </dd>
+    </dl>
+</div>
+<div class="foot">
+    <p>
+        Copyright © 2016 Tanglongwen.com All Rights Reserved
+        <a href="#"><img src="images/up.png" alt="返回顶部"></a>
+    </p>
+</div>
+<div class="list">
+    <h3>CATEGORIES</h3>
+    <ul>
+        <li><a href="#lecture_notes">Lecture Notes</a></li>
+        <li><a href="#labs">Labs</a></li>
+        <li><a href="#homeworks">HomeWorks</a></li>
+    </ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+html,body,h1,h2,h3,p,ol,ul,li,a{
+        padding: 0;
+        border: 0;
+        margin: 0;
+        font: inherit;
+    }
+.header a{
+    float: right;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-family: Verdana;
+    font-size: 15px;
+}
+.header a:hover{
+    text-decoration: underline;
+    color: #18e0ff;
+}
+body{
+    background-color:#0F162C;
+
+}
+.header h1{
+    float: left;
+        font-size: 55px;
+        font-family: Arial;
+        font-weight: normal;
+        color:white;
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+   .header p{
+       font-style: italic;
+       font-family: "Times New Roman";
+       font-size: 15px;
+       position: relative;
+       left: -120px;
+       top: 65px;
+       color: white;
+   }
+   .content{
+       float: left;
+       background-color: white;
+       width: 70%;
+       height: auto;
+       position: relative;
+       margin-top:100px;
+       margin-left: -210px;
+       margin-bottom: 1%;
+       /*margin: 100px auto 0 -200px;*/
+   }
+   .content h2{
+       border-bottom:dotted;
+       color: #293D75;
+       font-size: 35px;
+       font-family: 微软雅黑;
+       padding-left: 20px;
+       padding-top: 10px;
+   }
+   .content dt{
+       font-family: 微软雅黑;
+       font-size: 20px;
+       font-weight: bold;
+       padding-left: 10px;
+   }
+   .content dd{
+       font-family:微软雅黑;
+       margin:0 auto;
+       padding: 5px 20px 0 20px;
+       font-size: 18px;
+       line-height: 30px;
+   }
+   .content dd h4{
+       background-color: yellow;
+       width: 31%;
+   }
+   .content dd h5{
+       font-family: cursive;
+       font-size: 20px;
+       margin-top: 1%;
+   }
+.content dd h6{
+    font-family: fantasy;
+    font-size: 20px;
+    margin-top: -2%;
+}
+   .list{
+       color: white;
+       position: fixed;
+       /*margin-top: -260%;*/
+       /*margin-left: 80%;*/
+       width: 25%;
+       line-height: 40px;
+       right: 0%;
+       top: 32%;
+       z-index: auto;
+   }
+   .list h3{
+       font-size: 180%;
+       background-color: #3954AB;
+       width: 90%;
+       text-align: center;
+   }
+   .list ul{
+       padding-left: 25px;
+       list-style-type: none;
+       background:url(images/triangle-right.png) -15px 0  repeat-y;
+   }
+   .list ul li{
+       font-size: 125%;
+       font-family:Consolas;
+       text-decoration: underline;
+       padding-top: -40px;
+       border-bottom: 1px solid #3954AB;
+       line-height: 45px;
+       width: 89%;
+   }
+   .list ul li a{
+       color: #3954AB;
+   }
+   .list ul li a:hover{
+       color: chartreuse;
+   }
+   .foot p{
+       font-family: sans-serif;
+       margin-top: 364%;
+       margin-left: 30%;
+       font-size: 19px;
+       color: white;
+   }
+   .foot p a img{
+       position: fixed;
+       right: 0%;
+       top: 91%;
+       width: 4.25%;
+       height: 8.50%;
+   }

@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>电影展</title>
+    <link type="text/css" rel="stylesheet" href="mian.css">
+    <script type="text/javascript" src="movie.js"></script>
+    <script type="text/javascript" src="color_change.js"></script>
+</head>
+<body onload="delayMsg()">
+<script language="JavaScript">
+    step=0;
+    function flash_title()
+    {
+        step++;
+        if (step==3) {step=1}
+        if (step==1) {document.title='【电影展】'}
+        if (step==2) {document.title='【　　　】'}
+        setTimeout("flash_title()",380);
+    }
+    flash_title()
+</script>
+<h1 class="header" id="hline">My favorite movies：</h1>
+<div class="content">
+    <ol class="list">
+        <li id="li_1">1.阿甘正传</li>
+        <li class="ll" id="li_2">2.肖申克的救赎</li>
+        <li class="mm" id="li_3">3.美丽人生</li>
+        <li class="nn" id="li_4">4.辛德勒的名单</li>
+    </ol>
+</div>
+<div class="picture">
+    <ul >
+        <li><img src="images/MrGump.jpg" alt="阿甘正传"></li>
+        <li><img src="images/shawshank.jpg" alt="阿甘正传"></li>
+        <li><img src="images/beautiful_life.jpg" alt="阿甘正传"></li>
+        <li><img src="images/xindele.jpg" alt="阿甘正传"></li>
+    </ul>
+</div>
+<div>
+    <a href="#" class="myButton" onclick="sort()">reverse</a>
+</div>
+</body>
+</html>

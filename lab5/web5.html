@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web实验5</title>
+    <link type="text/css" rel="stylesheet" href="main.css">
+
+</head>
+<body>
+<script type="text/javascript" src="something.js"></script>
+<div id="to-do" class="content">
+    <form>
+        <h2>添加待办事项:</h2>
+        <textarea id="add_content" class="box" rows="3" cols="40"
+                  placeholder="Add Someting to do here"></textarea><br><br>
+        <a id="add_button" href="#" class="Button4" onclick="sure()">Add</a>
+        <h3>待办事项:</h3>
+        <div class="choice">
+            <ul id="cc">
+                <li><input name="test" id="in1" type="checkbox" value="reading books">Reading books</li>
+                <li><input name="test" id="in2" type="checkbox" value="See a film">See a film</li>
+                <li><input name="test" id="in3" type="checkbox" value="Office Work">Office Work</li>
+                <li><input name="test" id="in4" type="checkbox" value="Surf the Internet">Surf the Internet</li>
+                <li><input name="test" id="in5" type="checkbox" value="Dine together">Dine together</li>
+            </ul>
+        </div>
+    </form>
+    <br>
+    <br>
+    <a id="select_all" href="#" class="Button1" onclick="select()">select all</a>
+    <a id="deselect_all" href="#" class="Button2" onclick="deselect()">deselect all</a>
+    <a id="remove" href="#" class="Button3" onclick="remv()">remove</a>
+</div>
+</body>
+</html>
