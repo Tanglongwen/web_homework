@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name=”viewport” content=”width=device-width, initial-scale=1″/>
+    <title>我的家乡位置</title>
+    <link rel="stylesheet" href="css/map_css.css">
+</head>
+<body>
+<div id="style-selector-control"  class="map-control">
+    <select id="style-selector" class="selector-control">
+        <option value="default" selected="selected">默认主题</option>
+        <option value="silver">银色模式</option>
+        <option value="night">夜间模式</option>
+        <option value="retro" >复古模式</option>
+        <option value="hiding">简易模式</option>
+    </select>
+</div>
+<div id="map"></div>
+<script src="js/map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACqs2l_2CZLew3H1YOukhrxOUO12AHB1Y&callback=initMap"
+        async defer></script>
+</body>
+</html>
